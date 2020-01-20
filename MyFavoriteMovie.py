@@ -18,7 +18,7 @@ mycursor = mydb.cursor()
 #     next(csvfile)
 #     for row in MovieReader:
 #         if int(row[1]) > 6: # row[1] = my rating
-#             mycursor.execute("INSERT INTO movies (title, rating) VALUES (%s, %s, %s)", (row[3], int(row[1]), 0))
+#             mycursor.execute("INSERT INTO movies (title, rating, sorted) VALUES (%s, %s, %s)", (row[3], int(row[1]), 0))
 # 
 # mycursor.execute("ALTER TABLE movies ADD COLUMN id INT AUTO_INCREMENT PRIMARY KEY") 
 
